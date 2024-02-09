@@ -1,0 +1,139 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+.image,
+.conteudo {
+  padding: 30px 30px 0px 30px;
+}
+
+main .omelete {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+}
+.conteudo {
+  padding: 30px 30px 0px 30px;
+}
+h3 {
+  margin: 20px 0;
+  font-size: 1.6rem;
+  color: var(--Nutmeg);
+}
+h4 {
+  font-size: 1.3rem;
+  color: var(--Dark-Raspberry);
+}
+.conteudo p {
+  margin: 20px 0;
+  color: var(--Wenge-Brown);
+}
+
+.preparation {
+  background: var(--Rose-White);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.preparation ul {
+  padding: 20px;
+}
+
+li span.colored {
+  font-weight: 700;
+  color: var(--Dark-Charcoal);
+}
+
+ol,
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+}
+
+li {
+  padding-left: 15px;
+  color: var(--Wenge-Brown);
+}
+
+.ingredients ul {
+  padding: 0px 0px 20px 20px;
+  border-bottom: 1px solid var(--Wenge-Brown);
+}
+
+.instructios {
+  padding: 0px 30px;
+}
+
+.instructios ol {
+  padding: 0px 0px 20px 20px;
+  border-bottom: 1px solid var(--Wenge-Brown);
+}
+
+.beat {
+  font-weight: 700;
+}
+
+.nutricion {
+  padding: 0px 30px 30px;
+}
+.nutricion p {
+  margin-bottom: 10px;
+  color: var(--Wenge-Brown);
+}
+
+td {
+  padding: 15px 0px 15px 20px;
+  border-bottom: 1px solid;
+  color: var(--Wenge-Brown);
+}
+
+.col table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+@media screen and (max-width: 375px) {
+  .image {
+    padding: 0;
+  }
+  main .omelete {
+    border-radius: 0px;
+    height: 170px;
+  }
+}
+@media screen and (min-width: 376px) {
+  .image {
+    padding: 0;
+  }
+  main .omelete {
+    border-radius: 0px;
+    height: 270px;
+  }
+}
+@media screen and (min-width: 762px) {
+  .image {
+    padding: 30px 30px 0px 30px;
+  }
+  main .omelete {
+    border-radius: 30px;
+    height: 350px;
+  }
+}
